@@ -69,6 +69,17 @@ Use hosts already configured in your SSH config or `user@host` names. SSH authen
 - `defaultModel`: model to display, or `"all"` to select the latest model when records exist.
 - `tokenSpeedBucketSize`: total input-plus-output tokens per average-speed interval; defaults to `10000000`.
 
+## Upstream
+
+The upstream project is [icarus-3/opencode-monitor](https://github.com/icarus-3/opencode-monitor). This repository tracks its `main` history while retaining local extensions for SSH databases, per-source token totals, token-usage speed intervals, and the compact dashboard. Review upstream changes before merging so these extensions remain available.
+
+When cloning this repository, add the upstream remote and fetch its branches:
+
+```sh
+git remote add upstream https://github.com/icarus-3/opencode-monitor.git
+git fetch upstream
+```
+
 ## Development
 
 ```sh
